@@ -1,7 +1,9 @@
 from flask import Flask, request
 from fetchProducts import fetchProducts
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 url = 'http://20.244.56.144/'
 
