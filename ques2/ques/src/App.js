@@ -1,9 +1,14 @@
-import React from 'react'
+import * as React from 'react'
+import { ChakraProvider } from '@chakra-ui/react'
+import Home from './Components/Home'
 
-const App = () => {
+
+// using chakra ui library
+// https://v2.chakra-ui.com/getting-started
+export default function App() {
   return (
-    <div>App</div>
+    <ChakraProvider>
+      <Home />
+    </ChakraProvider>
   )
 }
-
-export default App
